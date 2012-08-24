@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>tileset</Word>
+      <Word>tilesets</Word>
+      <Word>x</Word>
+      <Word>y</Word>
+    </Recognized>
+    <Unrecognized />
+    <Deprecated />
+    <Compound />
+    <DiscreteExceptions />
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <Acronym>FPS</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

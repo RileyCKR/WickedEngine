@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileset1" tilewidth="32" tileheight="32">
+  <image source="C:\Users\Chris\Documents\Visual Studio 2010\Projects\WickedEngine\WickedDemo\WickedDemoContent\Tilesets\tileset1.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="tileset2" tilewidth="32" tileheight="32">
+  <image source="C:\Users\Chris\Documents\Visual Studio 2010\Projects\WickedEngine\WickedDemo\WickedDemoContent\Tilesets\tileset2.png" width="256" height="256"/>
+ </tileset>
+ <layer name="Terrain" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0bEJACAQBMH77tT+C7IAM0H5YILJF7aSFAAAAADAI6tBA378MC+MBt0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBpA4GIK5I=
+  </data>
+ </layer>
+ <layer name="Buildings" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0UsKg0AARMG5WgjRZWKMn/ufxBYjuM5mAlMFb9/QpQAAAKdneqUhLWmtO6d5w6X5G/X447+805hu6ZOmunOa15Xji71H6uvOad7+x70cX/gDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+MUGtzkJGw==
+  </data>
+ </layer>
+ <layer name="Splatter" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2cFuwyAMAND+X7P//51ph6mMGWxYK23jvUulhORgYxzo7Ra7Btcz983neHhmDHfzyEMWw2q+1MZr9HG9gutR7KO8RuPkbU0f13twfVRTo1xm15hr47qynlXzFN1XN7GPuIxqJFJZp7KcXoUxJ6j2gWswdqTaS3bG/Gdt3LLeW5m/WR1l8VYjD1G8snxF75iNr/SX02uk1X7brvaAz+cq4/v3V77dThb119X66J/r47/bY05QjfXOXv3qfvsxqz3qBNG6n63/b4Mx/bj+Xf3+ss+zGvlqNJ9nYyNtXrP+oH88RHNzZb62z2Tr1Kj2ojOyU0Vzs11DRn03Wneyeslq7/TaaFW+b9scVNaq6H3Vejtd5dywOn9n+77sO02NfDf7HhqN7WM8q5HV87ATreyXV/YXI3IyN4tP1ltW9nb2f3Ur3z2VGpmNje6xru8nlf/IZ3WgRuoqZ+az/ba5vy+L/U5sneHuq/zHndk9k+fnXlFPrMv2h7fifZ5DnP8269bvop4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPit3gFN00BO
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="12" tilewidth="40" tileheight="40">
+ <tileset firstgid="1" name="Tiles" tilewidth="40" tileheight="40" spacing="4">
+  <image source="Tiles.png" width="128" height="40"/>
+ </tileset>
+ <layer name="Tiles" width="20" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjZmBgYKYyphZANo8QjabvAJR2INY8Bhx8UszDZj42c7CIOxByHx73HkDjOyCxyYoPkJnMDPj9Sw0wVMxjwoJB4owkYmrnMxAGAIovBhw=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="20" height="12">
+  <object name="Point" x="613" y="354"/>
+  <object name="Box" x="336" y="261" width="120" height="120">
+   <properties>
+    <property name="B" value="203"/>
+    <property name="G" value="192"/>
+    <property name="R" value="255"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

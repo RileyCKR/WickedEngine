@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="10.0" Name="WickedEngine FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">$(FxCopDir)\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <AssemblyReferenceDirectories>
+   <Directory>$(ProjectDir)/../../../../../../Program Files (x86)/Microsoft XNA/XNA Game Studio/v4.0/References/Windows/x86/</Directory>
+   <Directory>$(ProjectDir)/../../../../../../Program Files (x86)/Microsoft XNA/XNA Game Studio/v4.0/References/Windows/x86/</Directory>
+   <Directory>$(ProjectDir)/../../../../../../Program Files (x86)/Khrona LLC/Awesomium SDK/1.6.3/wrappers/Awesomium.NET/Assemblies/</Directory>
+   <Directory>$(ProjectDir)/AwesomiumSharpXna/bin/x86/Debug/</Directory>
+  </AssemblyReferenceDirectories>
+  <Target Name="$(ProjectDir)/WickedDemo/WickedDemo/bin/x86/Debug/WickedDemo.exe" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/WickedEngine/bin/x86/Debug/WickedEngine.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityTransparencyRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="10.0">
+  <Namespaces>
+   <Namespace Name="WickedEngine.Components">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2011-11-22 02:44:59Z">
+      <Issue>
+       <Item>WickedEngine.Components</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="WickedEngine.Input">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2011-11-22 02:44:59Z">
+      <Issue>
+       <Item>WickedEngine.Input</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="WickedEngine.Settings">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2011-11-22 02:44:59Z">
+      <Issue>
+       <Item>WickedEngine.Settings</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/WickedDemo/WickedDemo/bin/x86/Debug/WickedDemo.exe">
+    <Modules>
+     <Module Name="wickeddemo.exe">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2011-11-22 02:44:32Z">
+        <Issue Name="NoStrongName">
+         <Item>'WickedDemo.exe'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2011-11-22 02:44:32Z">
+        <Issue>
+         <Item>'WickedDemo.exe'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="WickedDemo">
+        <Types>
+         <Type Name="Game1">
+          <Members>
+           <Member Name="#TestLevel">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2011-11-22 02:44:32Z">
+              <Issue>
+               <Item>'Game1.TestLevel'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#TitleScreen">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2011-11-22 02:44:32Z">
+              <Issue>
+               <Item>'Game1.TitleScreen'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Program">
+          <Members>
+           <Member Name="#Main(System.String[])">
+            <Messages>
+             <Message Id="args" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2011-11-22 02:44:32Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'args'</Item>
+               <Item>'Program.Main(string[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="WickedDemo.GameScreens">
+        <Types>
+         <Type Name="BaseGameState">
+          <Members>
+           <Member Name="#GameRef">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2011-11-22 02:44:32Z">
+              <Issue>
+               <Item>'BaseGameState.GameRef'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="TestLevel">
+          <Members>
+           <Member Name="#tileEngine">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2011-11-22 02:44:32Z">
+              <Issue>
+               <Item>'TestLevel.tileEngine'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/WickedEngine/bin/x86/Debug/WickedEngine.dll">
+    <Modules>
+     <Module Name="wickedengine.dll">
+      <Namespaces>
+       <Namespace Name="WickedEngine">
+        <Types>
+         <Type Name="Animation">
+          <Members>
+           <Member Name="#.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameter">
+               <Item>'Animation.Animation(int, int, int, int, int)'</Item>
+               <Item>x</Item>
+               <Item>'xOffset'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameter">
+               <Item>'Animation.Animation(int, int, int, int, int)'</Item>
+               <Item>y</Item>
+               <Item>'yOffset'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="GameObject">
+          <Members>
+           <Member Name="#X">
+            <Messages>
+             <Message Id="X" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberMoreMeaningfulName">
+               <Item>'GameObject.X'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Y">
+            <Messages>
+             <Message Id="Y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberMoreMeaningfulName">
+               <Item>'GameObject.Y'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="WickedEngine.Components">
+        <Types>
+         <Type Name="FPSCounter">
+          <Messages>
+           <Message Id="FPS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2011-11-22 02:44:59Z">
+            <Issue Name="Type">
+             <Item>FPS</Item>
+             <Item>'FPSCounter'</Item>
+             <Item>Fps</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#SetFPS(System.TimeSpan)">
+            <Messages>
+             <Message Id="FPS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2011-11-22 02:44:59Z">
+              <Issue Name="Member">
+               <Item>FPS</Item>
+               <Item>'FPSCounter.SetFPS(TimeSpan)'</Item>
+               <Item>Fps</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="WickedEngine.MapEngine">
+        <Types>
+         <Type Name="MapLayer">
+          <Members>
+           <Member Name="#GetTile(System.Int32,System.Int32)">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'MapLayer.GetTile(int, int)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'MapLayer.GetTile(int, int)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SetTile(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <Messages>
+             <Message Id="tileset" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameter">
+               <Item>'MapLayer.SetTile(int, int, int, int)'</Item>
+               <Item>tileset</Item>
+               <Item>'tileset'</Item>
+              </Issue>
+             </Message>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'MapLayer.SetTile(int, int, int, int)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'MapLayer.SetTile(int, int, int, int)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SetTile(System.Int32,System.Int32,WickedEngine.MapEngine.Tile)">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'MapLayer.SetTile(int, int, Tile)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'MapLayer.SetTile(int, int, Tile)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Tile">
+          <Members>
+           <Member Name="#.ctor(System.Int32,System.Int32)">
+            <Messages>
+             <Message Id="tileset" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameter">
+               <Item>'Tile.Tile(int, int)'</Item>
+               <Item>tileset</Item>
+               <Item>'tileset'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Tileset">
+            <Messages>
+             <Message Id="Tileset" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="Member">
+               <Item>Tileset</Item>
+               <Item>'Tile.Tileset'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="TileMap">
+          <Members>
+           <Member Name="#.ctor(System.Collections.Generic.IEnumerable`1&lt;WickedEngine.MapEngine.Tileset&gt;,System.Collections.Generic.IEnumerable`1&lt;WickedEngine.MapEngine.MapLayer&gt;)">
+            <Messages>
+             <Message Id="tilesets" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameter">
+               <Item>'TileMap.TileMap(IEnumerable&lt;Tileset&gt;, IEnumerable&lt;MapLayer&gt;)'</Item>
+               <Item>tilesets</Item>
+               <Item>'tilesets'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#.ctor(WickedEngine.MapEngine.Tileset,WickedEngine.MapEngine.MapLayer)">
+            <Messages>
+             <Message Id="tileset" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+              <Issue Name="MemberParameter">
+               <Item>'TileMap.TileMap(Tileset, MapLayer)'</Item>
+               <Item>tileset</Item>
+               <Item>'tileset'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Tileset">
+          <Messages>
+           <Message Id="Tileset" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2011-11-22 02:44:59Z">
+            <Issue Name="Type">
+             <Item>Tileset</Item>
+             <Item>'Tileset'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Rules>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+    <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+    <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+    <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+    <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="MemberMoreMeaningfulName">Consider providing a more meaningful name than member name {0}.</Resolution>
+    <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="MemberParameterMoreMeaningfulName">In method {0}, consider providing a more meaningful name than parameter name {1}.</Resolution>
+    <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+    <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
